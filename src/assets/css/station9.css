@@ -1,0 +1,64 @@
+body{
+    background-color: #C4C4C4;
+}
+
+header{
+    background-color: #ffffff;
+}
+
+footer{
+    background-color: #ffffff;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 5%;
+}
+
+.card__title{
+    color: #282828;
+    font-size: 14px;
+}
+
+.card__description{
+    width: 100%;
+    color: #282828;
+    font-size: 12px;
+}
+
+.card__img-top{
+    width: 288px;
+    height: 182px;
+    margin-bottom: 10px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+	/* 1200px以下に適用されるCSS（PC用） */
+}
+@media screen and (max-width: 768px) {
+	/* 768px以下に適用されるCSS（タブレット用） */
+    .card__title{
+        font-size: 70%;
+    }
+    .card__description{
+        font-size: 70%;
+        overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+    }
+}
+@media screen and (max-width: 320px) {
+	/* 320px以下に適用されるCSS（スマホ用） */
+    .card__title{
+        font-size: 70%;
+    }
+    .card__description{
+        display: none;
+    }
+}
